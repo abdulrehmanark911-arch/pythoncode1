@@ -1,1 +1,1 @@
-print("wassup Buddy!!" v6)
+t("wassup Buddy!!" v6)
