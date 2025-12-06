@@ -1,75 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Jenkins Tutorials</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenkins Tutorial</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
+            font-family: "Poppins", sans-serif;
+            background: #0f0f0f;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
+        .glass-card {
+            width: 85%;
+            max-width: 1200px;
+            padding: 50px;
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.07);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+            color: #e5e5e5;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+        nav .logo {
+            font-size: 22px;
+            font-weight: 600;
         }
 
         nav ul {
-            padding: 0;
-            list-style-type: none;
-            display: inline;
+            list-style: none;
+            display: flex;
+            gap: 25px;
         }
 
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
+        nav ul li a {
+            text-decoration: none;
+            color: #dcdcdc;
+            transition: 0.3s;
         }
 
-        section {
-            padding: 20px;
-            margin: 20px;
-            background: white;
-            border-radius: 8px;
+        nav ul li a:hover {
+            color: #ffffff;
         }
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
+        h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
         }
+
+        h2 {
+            margin-top: 30px;
+            font-size: 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 8px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #d1d1d1;
+        }
+
+        .contact-box {
+            margin-top: 10px;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .contact-box span {
+            font-weight: 600;
+        }
+
     </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Welcome to My Jenkins Tutorials</h1>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <div class="glass-card">
 
-<section id="home">
-    <h2>Home</h2>
-    <p>This is the home section of the webpage.</p>
-</section>
+        <nav>
+            <div class="logo">Jenkins Tutorial</div>
 
-<section id="about">
-    <h2>About</h2>
-    <p>Learn more about us in this section.</p>
-</section>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Get in touch with us here.</p>
-<
+        <!-- HOME SECTION -->
+        <section id="home">
+            <h1>Welcome to Jenkins Tutorial</h1>
+            <p>
+                Learn complete CI/CD automation with Jenkins.  
+                This tutorial will help you understand how to build pipelines, automate deployments, 
+                integrate tools, and manage DevOps workflows in a very easy and modern way.
+            </p>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <h2>About Jenkins</h2>
+            <p>
+                Jenkins is one of the most powerful and widely used automation servers for Continuous Integration
+                and Continuous Delivery (CI/CD).  
+                It helps developers automate code building, testing, packaging, and deployment steps.  
+                With thousands of plugins and full customization support, Jenkins makes DevOps workflows smooth,
+                fast, and reliable — whether you're deploying simple apps or managing enterprise-grade systems.
+            </p>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-box">
+                <span>Phone:</span> 0323-2814751 <br>
+                <span>Email:</span> abdulrehman.ark911@gmail.com
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
